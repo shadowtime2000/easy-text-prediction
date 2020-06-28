@@ -19,3 +19,4 @@ textPredictionTool.train("Everyone is good", 9);
 
 textPredictionTool.predict("is"); // 10% chance -> evil, 90% chance -> good
 ```
+Warning! Your code will not work without specifying a weight.
