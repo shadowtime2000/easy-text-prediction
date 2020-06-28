@@ -1,0 +1,12 @@
+{
+  "name": "easy-text-prediction",
+  "version": "0.1.0",
+  "description": "An easy text prediction package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["text-prediction"],
+  "author": "shadowtime2000",
+  "license": "MIT"
+}
