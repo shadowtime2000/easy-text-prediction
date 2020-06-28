@@ -8,7 +8,7 @@ class TextPredictionTool {
     var words = data.split(" ");
 
     for (var word in words) {
-      if (!this.nextWord.words[word]) {
+      if (!this.nextWord[words[word]]) {
         this.nextWord[words[word]] = [];
       }
     }
