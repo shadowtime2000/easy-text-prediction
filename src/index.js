@@ -1,9 +1,10 @@
-
+const fs = require("fs");
 
 class TextPredictionTool {
   constructor() {
     this.nextWord = {};
   }
+
   train(data, weight) {
     var words = data.split(" ");
 
@@ -20,6 +21,15 @@ class TextPredictionTool {
         }
       }
     }
+  }
+
+  loadFromFile(file) {
+    this.nextWord = require(file);
+  }
+
+  saveToFile(file) {
+    const data = JSON.stringify(this.nextWord);
+    fs.writeFile(file, data, (err) = {if (err) {throw err}});
   }
 
   predict(data) {
