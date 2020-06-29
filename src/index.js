@@ -40,9 +40,9 @@ class TextPredictionTool {
   }
 
   generateText(data, words) {
-    var words = data.split(" ");
+    var splitData = data.split(" ");
     var newWords = [];
-    var lastWord = words[words.length - 1];
+    var lastWord = splitData[splitData.length - 1];
 
     for (var i = 0; i < words; i++) {
       newWords.push(this.predict(lastWord));
