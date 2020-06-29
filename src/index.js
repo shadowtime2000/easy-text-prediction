@@ -29,7 +29,7 @@ class TextPredictionTool {
 
   saveToFile(file) {
     const data = JSON.stringify(this.nextWord);
-    fs.writeFile(file, data, (err) = {if (err) {throw err}});
+    fs.writeFile(file, data, (err) => {if (err) {throw err}});
   }
 
   predict(data) {

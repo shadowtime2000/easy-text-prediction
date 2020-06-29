@@ -1,6 +1,6 @@
 {
   "name": "easy-text-prediction",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An easy text prediction package",
   "main": "index.js",
   "scripts": {
