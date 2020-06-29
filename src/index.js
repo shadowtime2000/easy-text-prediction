@@ -38,6 +38,19 @@ class TextPredictionTool {
 
     return this.nextWord[lastWord][Math.floor(Math.random()*this.nextWord[lastWord].length)];
   }
+
+  generateText(data, words) {
+    var words = data.split(" ");
+    var newWords = [];
+    var lastWord = words[words.length - 1];
+
+    for (var i = 0; i < words; i++) {
+      newWords.push(this.predict(lastWord));
+      lastWord = newWords[newWords.length - 1];
+    }
+
+    return newWords.join(" ");
+  }
 }
 
 module.exports = TextPredictionTool;
