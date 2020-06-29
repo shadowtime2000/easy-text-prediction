@@ -22,6 +22,8 @@ textPredictionTool.predict("is"); // 10% chance -> evil, 90% chance -> good
 textPredictionTool.saveToFile("textPredictionTool.json"); // Save to file
 
 textPredictionTool.loadFromFile("textPredictionTool.json"); // Load from file
+
+textPredictionTool.generate("is", 50); // Generate 50 words that could follow that word
 ```
 Warning! Your code will not work without specifying a weight.
 
