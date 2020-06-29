@@ -24,7 +24,7 @@ class TextPredictionTool {
   }
 
   loadFromFile(file) {
-    this.nextWord = require(file);
+    this.nextWord = JSON.parse(fs.readFileSync(file));
   }
 
   saveToFile(file) {
