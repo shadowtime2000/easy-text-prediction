@@ -24,11 +24,7 @@ class TextPredictionTool {
   }
 
   loadFromFile(file) {
-    fs.readFile(file, (err, data) => {
-      if (err) throw err;
-
-      this.nextWord = JSON.parse(data);
-    });
+    this.nextWord = require(file);
   }
 
   saveToFile(file) {
