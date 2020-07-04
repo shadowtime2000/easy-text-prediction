@@ -23,7 +23,7 @@ textPredictionTool.saveToFile("textPredictionTool.json"); // Save to file
 
 textPredictionTool.loadFromFile("textPredictionTool.json"); // Load from file
 
-textPredictionTool.generate("is", 50); // Generate 50 words that could follow that word
+textPredictionTool.generate("is", 50); // Generate 50 words that could follow that word. Warning! An error will occur if you do not have sufficient training data.
 ```
 Warning! Your code will not work without specifying a weight.
 
