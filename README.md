@@ -10,9 +10,9 @@ npm install easy-text-prediction
 ## Usage
 You can use this package like this:
 ```javascript
-const TextPredictionTool = require("easy-text-prediction");
+const EasyTextPrediction = require("easy-text-prediction");
 
-var textPredictionTool = new TextPredictionTool();
+var textPredictionTool = new EasyTextPrediction.WordPrediction();
 
 textPredictionTool.train("Everyone is evil", 1);
 textPredictionTool.train("Everyone is good", 9);
@@ -26,6 +26,12 @@ textPredictionTool.loadFromFile("textPredictionTool.json"); // Load from file
 textPredictionTool.generate("is", 50); // Generate 50 words that could follow that word
 ```
 Warning! Your code will not work without specifying a weight.
+
+There are two types of prediction tools:
+* Word Prediction predicts by words
+* Char Prediction predicts by characters
+
+You can easily swap prediction tools by changing it from ```var textPredictionTool = new EasyTextPrediction.WordPrediction();``` to ```var textPredictionTool = new EasyTextPrediction.CharPrediction();```
 
 ## TODO
 - [ ] Have text prediction tool remember all text up to that word
